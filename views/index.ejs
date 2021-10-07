@@ -1,0 +1,16 @@
+<h1>ini adalah halaman index.html ya</h1>
+
+<p>Welcome to my site dude...</p>
+<h2>Halo nama saya <%= nama %></h2>
+
+<h1>Daftar Mahasiswa</h1>
+<% if (mahasiswa.length < 1) { %>
+<p>Mahasiswa masih kosong</p>
+<% } %>
+<% mahasiswa.forEach(m => { %>
+<ul>
+    <li>nama : <%= m.nama %> </li>
+    <li>Email : <%= m.email %> </li>
+
+</ul>
+<% }) %>
